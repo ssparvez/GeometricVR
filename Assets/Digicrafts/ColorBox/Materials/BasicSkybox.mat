@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: BasicSkybox
+  m_Shader: {fileID: 4800000, guid: c9611c292464048e7934d777d235be8e, type: 3}
+  m_ShaderKeywords: _BGCOLOR_NONE _BG_COLOR_SOLID
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _BGCOLOR
+      second: 1
+    - first:
+        name: _BG_COLOR
+      second: 0
+    - first:
+        name: _BgColorIntensity
+      second: 1
+    - first:
+        name: _BgColorPosition3
+      second: 0
+    - first:
+        name: _BgColorRotation
+      second: 0
+    - first:
+        name: _SCREENSPACE
+      second: 0
+    m_Colors:
+    - first:
+        name: _BgColor
+      second: {r: 0.957, g: 1, b: 0.686, a: 1}
+    - first:
+        name: _BgColor1
+      second: {r: 0.34385815, g: 0.7794118, b: 0.7794118, a: 1}
+    - first:
+        name: _BgColor2
+      second: {r: 0.38125, g: 1, b: 0.27205884, a: 1}
+    - first:
+        name: _BgColor3
+      second: {r: 0.60232216, g: 0.5068123, b: 0.8014706, a: 1}
+    - first:
+        name: _BgColorPosition
+      second: {r: 0, g: 0.99999994, b: 0, a: 1}

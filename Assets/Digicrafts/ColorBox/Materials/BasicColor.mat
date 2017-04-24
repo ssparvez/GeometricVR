@@ -1,0 +1,195 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: BasicColor
+  m_Shader: {fileID: 4800000, guid: 5e5b1ea4ab96d4d62916cd804fe4fae1, type: 3}
+  m_ShaderKeywords: _BACK_COLOR_NONE _BOTTOM_COLOR_NONE _BOTTOM_COLOR_ON _FADE_NONE
+    _FRONT_COLOR_SOLID _LEFT_COLOR_GRADIENT _MIXCOLOR_ON _RIGHT_COLOR_NONE _TOP_COLOR_ON
+    _TOP_COLOR_SOLID _UV_SPACE_WORLD _WORLDSPACE_ON
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs: []
+    m_Floats:
+    - first:
+        name: _BACK_COLOR
+      second: 0
+    - first:
+        name: _BOTTOM_COLOR
+      second: 0
+    - first:
+        name: _BackColorPosition3
+      second: 0
+    - first:
+        name: _BackColorRotation
+      second: 0
+    - first:
+        name: _BottomColorPosition3
+      second: 0
+    - first:
+        name: _BottomColorRotation
+      second: 0
+    - first:
+        name: _FADE
+      second: 0
+    - first:
+        name: _FRONT_COLOR
+      second: 1
+    - first:
+        name: _FrontColorPosition3
+      second: 0
+    - first:
+        name: _FrontColorRotation
+      second: 0
+    - first:
+        name: _LEFT_COLOR
+      second: 2
+    - first:
+        name: _LeftColorPosition3
+      second: 0
+    - first:
+        name: _LeftColorRotation
+      second: 0
+    - first:
+        name: _MixColor
+      second: 1
+    - first:
+        name: _MixColorPower
+      second: 0.5
+    - first:
+        name: _RIGHT_COLOR
+      second: 0
+    - first:
+        name: _RightColorPosition3
+      second: 0
+    - first:
+        name: _RightColorRotation
+      second: 0
+    - first:
+        name: _Shadow
+      second: 0
+    - first:
+        name: _ShadowPower
+      second: 0.5
+    - first:
+        name: _TOP_COLOR
+      second: 1
+    - first:
+        name: _TopColorPosition3
+      second: 0
+    - first:
+        name: _TopColorRotation
+      second: 0
+    - first:
+        name: _UV_SPACE
+      second: 1
+    m_Colors:
+    - first:
+        name: _BackColor
+      second: {r: 0.082, g: 1, b: 0.514, a: 1}
+    - first:
+        name: _BackColor1
+      second: {r: 0.082, g: 1, b: 0.514, a: 1}
+    - first:
+        name: _BackColor2
+      second: {r: 1, g: 0.082, b: 0.624, a: 1}
+    - first:
+        name: _BackColor3
+      second: {r: 1, g: 0.082, b: 0.624, a: 1}
+    - first:
+        name: _BackColorPosition
+      second: {r: 0, g: 1, b: 0, a: 1}
+    - first:
+        name: _BottomColor
+      second: {r: 0, g: 0.835, b: 1, a: 1}
+    - first:
+        name: _BottomColor1
+      second: {r: 0.667, g: 0.851, b: 0.937, a: 1}
+    - first:
+        name: _BottomColor2
+      second: {r: 0.29, g: 0.8, b: 0.2, a: 1}
+    - first:
+        name: _BottomColor3
+      second: {r: 0.29, g: 0.8, b: 0.2, a: 1}
+    - first:
+        name: _BottomColorPosition
+      second: {r: 0, g: 1, b: 0, a: 1}
+    - first:
+        name: _DefaultColor
+      second: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - first:
+        name: _FadeColor
+      second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _FadePower
+      second: {r: 0, g: 1, b: 0, a: 1}
+    - first:
+        name: _FrontColor
+      second: {r: 0.667, g: 0.851, b: 0.937, a: 1}
+    - first:
+        name: _FrontColor1
+      second: {r: 0.667, g: 0.851, b: 0.937, a: 1}
+    - first:
+        name: _FrontColor2
+      second: {r: 0.29, g: 0.8, b: 0.2, a: 1}
+    - first:
+        name: _FrontColor3
+      second: {r: 0.29, g: 0.8, b: 0.2, a: 1}
+    - first:
+        name: _FrontColorPosition
+      second: {r: 0, g: 1, b: 0, a: 1}
+    - first:
+        name: _LeftColor
+      second: {r: 0.765, g: 0.522, b: 0.459, a: 1}
+    - first:
+        name: _LeftColor1
+      second: {r: 0.765, g: 0.522, b: 0.459, a: 1}
+    - first:
+        name: _LeftColor2
+      second: {r: 0.98, g: 0.859, b: 0.706, a: 1}
+    - first:
+        name: _LeftColor3
+      second: {r: 0.98, g: 0.859, b: 0.706, a: 1}
+    - first:
+        name: _LeftColorPosition
+      second: {r: 0, g: 1, b: 0, a: 1}
+    - first:
+        name: _RightColor
+      second: {r: 0.937, g: 0.765, b: 1, a: 1}
+    - first:
+        name: _RightColor1
+      second: {r: 0.937, g: 0.765, b: 1, a: 1}
+    - first:
+        name: _RightColor2
+      second: {r: 0.737, g: 0.071, b: 0.984, a: 1}
+    - first:
+        name: _RightColor3
+      second: {r: 0.737, g: 0.071, b: 0.984, a: 1}
+    - first:
+        name: _RightColorPosition
+      second: {r: 0, g: 1, b: 0, a: 1}
+    - first:
+        name: _ShadowColor
+      second: {r: 0.6, g: 0.5, b: 0.5, a: 1}
+    - first:
+        name: _TopColor
+      second: {r: 0.957, g: 1, b: 0.686, a: 1}
+    - first:
+        name: _TopColor1
+      second: {r: 0.667, g: 0.851, b: 0.937, a: 1}
+    - first:
+        name: _TopColor2
+      second: {r: 0.29, g: 0.8, b: 0.2, a: 1}
+    - first:
+        name: _TopColor3
+      second: {r: 0.29, g: 0.8, b: 0.2, a: 1}
+    - first:
+        name: _TopColorPosition
+      second: {r: 0, g: 1, b: 0, a: 1}
