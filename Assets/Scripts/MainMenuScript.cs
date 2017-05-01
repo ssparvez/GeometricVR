@@ -14,6 +14,7 @@ public class MainMenuScript : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
+		Cursor.visible = false;
 		buttons = this.GetComponentsInChildren<Button>(true);
 		foreach(Button button in buttons)
 		{
@@ -32,15 +33,11 @@ public class MainMenuScript : MonoBehaviour
 					button.onClick.AddListener(delegate{OpenShapeMenu(button.name);});
 					break;
 			}
-			//button.OnMouseOver.AddListener(delegate{EnlargeButton(button);});
-			//button.OnMouseExit.AddListener(delegate{ReduceButton;});
 		}
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
-	}
+	void Update () {}
 
 	void OpenSettingsMenu()
 	{
@@ -62,16 +59,6 @@ public class MainMenuScript : MonoBehaviour
 		//format shape name
 		shapeName = shapeName.Replace("Button", "");
 		shapeMenuText.text = Regex.Replace(shapeName, "(\\B[A-Z])", " $1");
-	}
-
-	void EnlargeButton(Button buttonToEnlarge)
-	{
-		//RectTransform sdf = buttonToEnlarge.GetComponent<RectTransform>();
-
-	}
-	void ReduceButton(Button buttonToReduce)
-	{
-
 	}
 
 	void ToggleVRMode() 

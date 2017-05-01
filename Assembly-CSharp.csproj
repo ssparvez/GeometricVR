@@ -148,7 +148,6 @@
      <Compile Include="Assets\Scripts\MainMenuScript.cs" />
      <Compile Include="Assets\Scripts\SettingsMenuScript.cs" />
      <Compile Include="Assets\Scripts\ShapeMenuScript.cs" />
-     <Compile Include="Assets\Scripts\ShapeScript.cs" />
      <Compile Include="Assets\Scripts\ShapeViewScript.cs" />
      <Compile Include="Assets\Scripts\SurfaceAreaTestScript.cs" />
      <Compile Include="Assets\Scripts\VolumeTestScript.cs" />

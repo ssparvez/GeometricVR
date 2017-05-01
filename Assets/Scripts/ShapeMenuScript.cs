@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ShapeMenuScript : MonoBehaviour 
 {
 	public Text shapeMenuText;
+	public Text volumeTestText;
 	public GameObject shapeMenu; // current screen
 	public GameObject mainMenu; // prev screen
 	public GameObject shapeView; // next screen
@@ -24,8 +25,7 @@ public class ShapeMenuScript : MonoBehaviour
 	}
 	
 	// Update is called once per frame
-	void Update() 
-	{}
+	void Update() {}
 
 	void OpenShapeView()
 	{
@@ -39,8 +39,7 @@ public class ShapeMenuScript : MonoBehaviour
 	void OpenVolumeView()
 	{
 		volumeTest.SetActive(true);
-		Text volumeTestText = GameObject.Find("VolumeTestText").GetComponent<Text>();
-		volumeTestText.text = volumeTestText.text.Replace("<Shape>", volumeTestText.text);
+		volumeTestText.text = "Volume of " + shapeMenuText.text + ":";
 		shapeMenu.SetActive(false);
 	}
 

@@ -19,11 +19,11 @@ public class ShapeViewScript : MonoBehaviour
 	public GameObject volumeFormula;
 	public GameObject surfaceAreaFormula;
 	private string[] volumes = {"a<sup>3</sup>", "4/3πr<sup>3</sup>", "πr<sup>2</sup>h", 
-								"VERY LONG", "(1/3)AH", "a<sup>2</sup>(h/3)", 
+								"N/A", "(1/3)AH", "a<sup>2</sup>(h/3)", 
 								"lwh", "πr<sup>2</sup>(h/3)", "((3sqrt(3))/2)a<sup>2</sup>h"};
 	private string[] surfaceAreas = {"6a<sup>2</sup>", "4πr<sup>2</sup>", "2πrh+2πr<sup>2</sup>",
-									"DUNNO", "A+(3/2)bh", "LITTLE LONG",
-									"2(lw + wh + hl)", "πr(r+sqrt(h<sup>2</sup>+r<sup>2</sup>))", "6ah+3sqrt(3)a<sup>2</sup>"};
+									"N/A", "A+(3/2)bh", "a(a+sqrt(a<sup>2</sup>+4h<sup>2</sup>))",
+									"2(lw+wh+hl)", "πr(r+sqrt(h<sup>2</sup>+r<sup>2</sup>))", "6ah+3sqrt(3)a<sup>2</sup>"};
     private int currentShapeIndex; // current shape being viewed
 	private int frames = 0;
 
@@ -55,7 +55,6 @@ public class ShapeViewScript : MonoBehaviour
 	// Update is called once per frame
 	void Update() 
 	{
-		frames++;
 		if(frames % 2 == 0)
 		{
 			shapes[currentShapeIndex].transform.Rotate(1,1,1);
