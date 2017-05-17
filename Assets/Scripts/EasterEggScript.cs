@@ -9,10 +9,10 @@ public class EasterEggScript : MonoBehaviour {
 	public GameObject torusText;
 	private int frames = 0;
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 		eggButton.onClick.AddListener(ToggleTorus);
 	}
-	
 	// Update is called once per frame
 	void Update () {
 		frames++;
@@ -22,7 +22,6 @@ public class EasterEggScript : MonoBehaviour {
 			frames = 0;
 		}
 	}
-	
 	void ToggleTorus()
 	{
 		torus.SetActive(!torus.activeSelf);

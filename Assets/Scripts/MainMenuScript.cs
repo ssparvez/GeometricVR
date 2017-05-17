@@ -6,8 +6,9 @@ using UnityEngine.UI;
 
 public class MainMenuScript : MonoBehaviour
 {
+	public Text shapeViewText;
 	public GameObject mainMenu;
-	public GameObject shapeMenu;
+	public GameObject shapeView;
 	public GameObject settingsMenu;
 	public GameObject creditsMenu;
 	public Button[] buttons;
@@ -30,37 +31,29 @@ public class MainMenuScript : MonoBehaviour
 					button.onClick.AddListener(ToggleVRMode);
 					break;
 				default:
-					button.onClick.AddListener(delegate{OpenShapeMenu(button.name);});
+					button.onClick.AddListener(delegate{OpenShapeView(button.name);});
 					break;
 			}
 		}
 	}
-	
-	// Update is called once per frame
-	void Update () {}
-
 	void OpenSettingsMenu()
 	{
 		mainMenu.SetActive(false);
 		settingsMenu.SetActive(true);
 	}
-
 	void OpenCreditsMenu()
 	{
 		mainMenu.SetActive(false);
 		creditsMenu.SetActive(true);
 	}
-
-	void OpenShapeMenu(string shapeName)
+	void OpenShapeView(string shapeName)
 	{
 		mainMenu.SetActive(false);
-		shapeMenu.SetActive(true);
-		Text shapeMenuText = GameObject.Find("ShapeMenuText").GetComponent<Text>();
-		//format shape name
+		//format shape name and set text of shape view canvas
 		shapeName = shapeName.Replace("Button", "");
-		shapeMenuText.text = Regex.Replace(shapeName, "(\\B[A-Z])", " $1");
+		shapeViewText.text = Regex.Replace(shapeName, "(\\B[A-Z])", " $1");
+		shapeView.SetActive(true);
 	}
-
 	void ToggleVRMode() 
 	{
 		// switch between regular and vr view

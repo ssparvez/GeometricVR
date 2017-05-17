@@ -1,4 +1,6 @@
-﻿Shader "Digicrafts/ColorBox-Outline"
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "Digicrafts/ColorBox-Outline"
 {
 	Properties
 	{
@@ -169,7 +171,7 @@
             {
                 v2f o;
 				if(_OutlineWidth!=0){	                
-					o.pos = mul (UNITY_MATRIX_MVP, v.vertex);
+					o.pos = UnityObjectToClipPos (v.vertex);
 	                float3 norm   = mul ((float3x3)UNITY_MATRIX_IT_MV, v.normal);
 	                float2 offset = normalize(TransformViewToProjection(norm.xy));
 	                float ortho = 100;

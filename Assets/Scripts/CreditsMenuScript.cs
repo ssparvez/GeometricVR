@@ -12,10 +12,6 @@ public class CreditsMenuScript : MonoBehaviour
 	{
         backButton.onClick.AddListener(GoBackToMainMenu);
 	}
-	
-	// Update is called once per frame
-	void Update () {}
-
 	void GoBackToMainMenu()
 	{
         creditsMenu.SetActive(false);

@@ -9,7 +9,7 @@ using FlipWebApps.BeautifulTransitions.Scripts.Transitions.TransitionSteps;
 
 public class ShapeViewScript : MonoBehaviour 
 {
-	public GameObject shapeMenu;
+	public GameObject mainMenu;
 	public GameObject shapeView;
 	public Text shapeViewText;
 	public Button backButton;
@@ -27,31 +27,21 @@ public class ShapeViewScript : MonoBehaviour
     private int currentShapeIndex; // current shape being viewed
 	private int frames = 0;
 
-	void Awake()
-	{
-		
-	}
 	// Use this for initialization
 	void Start() 
 	{
-        string currentShapeName = shapeViewText.text.Replace(" ", "");;
-		Debug.Log(currentShapeName);
-		ActivateShape(currentShapeName);
-		// set formula text
-		SetFormulas();
-
-		backButton.onClick.AddListener(BackToShapeMenu);
+		// button event handlers
+		backButton.onClick.AddListener(BackToMainMenu);
 		nextButton.onClick.AddListener(NextShape);
 		prevButton.onClick.AddListener(PrevShape);
 	}
-
 	void OnEnable()
 	{
-		string currentShapeName = GameObject.Find("ShapeMenuText").GetComponent<Text>().text.Replace(" ", "");;
+		string currentShapeName = shapeViewText.text.Replace(" ", "");
 		ActivateShape(currentShapeName);
+		Debug.Log(currentShapeName);
 		SetFormulas();
 	}
-	
 	// Update is called once per frame
 	void Update() 
 	{
@@ -62,13 +52,10 @@ public class ShapeViewScript : MonoBehaviour
 		}
 	}
 
-	void BackToShapeMenu()
+	void BackToMainMenu()
 	{
 		shapes[currentShapeIndex].SetActive(false);
-		//currentShape.SetActive(false);
-        shapeMenu.SetActive(true);
-		Text shapeMenuText = GameObject.Find("ShapeMenuText").GetComponent<Text>();
-		shapeMenuText.text = shapeViewText.text;
+        mainMenu.SetActive(true);
 		shapeView.SetActive(false);
 	}
 	void ActivateShape(string currentShapeName)
@@ -79,7 +66,7 @@ public class ShapeViewScript : MonoBehaviour
 			{
 				shapes[i].SetActive(true);
 				currentShapeIndex = i;
-				break;
+				return;
 			}
 		}
 	}
@@ -105,9 +92,6 @@ public class ShapeViewScript : MonoBehaviour
 	{
 		shapes[currentShapeIndex].SetActive(false);
 		currentShapeIndex = newShapeIndex;
-		// set formula text
-		// volumeFormula.GetComponent<TextMeshPro>().text += volumes[currentShapeIndex];
-		// surfaceAreaFormula.GetComponent<TextMeshPro>().text += surfaceArea[currentShapeIndex];
 		shapeViewText.text = Regex.Replace(shapes[currentShapeIndex].name, "(\\B[A-Z])", " $1");
 		SetFormulas();
 	}
