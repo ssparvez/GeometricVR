@@ -1,0 +1,42 @@
+<html ng-app>
+    <head>
+        <title>Scenario</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <!--Header-->
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper blue">
+                    <a href="index.html"><img id="logo" class="responsive-img" src="images/logo.png"></a>
+                    <a href="index.html" id="title" class="brand-logo">GeometricVR</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down" style="padding-right:30px;">
+                        <li class="waves-effect"><a href="index.html">Home</a></li>
+                        <li class="waves-effect"><a href="proposal.html">Proposal</a></li>
+                        <li class="waves-effect"><a href="personas.html">Personas</a></li>
+                        <li class="active waves-effect"><a href="#!">Scenario</a></li>
+                        <li class="waves-effect"><a href="flowchart.html">Flow Chart</a></li>
+                        <li class="waves-effect"><a href="wireframe.html">Wireframe</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!--Content-->
+        <div class="container">
+            <h4>Scenario</h4>
+            <div class="row">
+                <div class="col s2"></div>
+                <div class="col s8"><img class="responsive-img" src="images/scenario.jpg"></div>
+                <div class="col s2"></div>
+            </div>
+        </div>
+        <!--Footer-->
+        <ng-include src="'include/footer.html'"></ng-include>
+    </body>
+</html>
